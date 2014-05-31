@@ -10,7 +10,7 @@
  */
 
 var config = {
-    name: 'Booty-Bot',
+    name: 'REV Bot',
     userid: function () {
         return toId(this.name);
     },
