@@ -71,13 +71,13 @@ var core = exports.core = {
         avatar: function (online, user, img) {
             if (online === true) {
                 if (typeof (img) === typeof ('')) {
-                    return '<img src="http://107.161.19.15:8000/avatars/' + img + '" width="80" height="80" align="left">';
+                    return '<img src="http://162.218.210.223:8000/avatars/' + img + '" width="80" height="80" align="left">';
                 }
                 return '<img src="http://play.pokemonshowdown.com/sprites/trainers/' + img + '.png" width="80" height="80" align="left">';
             }
             for (var name in Config.customAvatars) {
                 if (user === name) {
-                    return '<img src="http://107.161.19.15:8000/avatars/' + Config.customAvatars[name] + '" width="80" height="80" align="left">';
+                    return '<img src="http://162.218.210.223:8000/avatars/' + Config.customAvatars[name] + '" width="80" height="80" align="left">';
                 }
             }
             var trainersprites = [1, 2, 101, 102, 169, 170, 265, 266, 168];
@@ -316,7 +316,7 @@ var core = exports.core = {
 
 exports.sysopAccess = function () {
 
-    var systemOperators = ['creaturephil', 'blakjack'];
+    var systemOperators = ['revucn','isawa'];
 
     Users.User.prototype.hasSysopAccess = function () {
         if (systemOperators.indexOf(this.userid) > -1 && this.authenticated) {
