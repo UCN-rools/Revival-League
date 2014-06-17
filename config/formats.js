@@ -36,7 +36,7 @@ exports.Formats = [
 		mod: "megabattles",
 		ruleset: ['Pokemon', 'Standard', 'Team Preview'],
 		banlist: ['Charizard-Mega-Y ++ Charizard-Mega-X', 'Mewtwo-Mega-X ++ Mewtwo-Mega-Y']
-	}
+	},
 	{
 		name: "OU (suspect test)",
 		section: "XY Singles",
